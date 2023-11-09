@@ -1,4 +1,4 @@
-![My Image](PRO.png)
+![My Image](PRO.png){:height="50%" width="50%"}
 # Team-Victorinox
 
 # Members
