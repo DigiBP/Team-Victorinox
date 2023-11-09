@@ -9,3 +9,8 @@ Dominic
 
 # Introduction
 
+# Goal
+
+
+# Automation
+
