@@ -1,10 +1,11 @@
-![My Image](PRO.png){:height="50%" width="50%"}
+<img src="PRO.png" alt="My Image" width="200" height="200">
+
 # Team-Victorinox
 
 # Members
 
-Albert
-John
+Alberto Wicker
+John Arellano
 Dominic
 
 # Introduction
