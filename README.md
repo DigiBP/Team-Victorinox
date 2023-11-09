@@ -14,11 +14,11 @@ Create an innovaitve digital pharmacy in the Swiss market.
 
 # Goal
 
-Our goal is to record PRO and identify unmet medical needs and record adverse drug effects in the post marekt stage of drugs
+Our goal is to record PRO and identify unmet medical needs and record adverse drug effects in the post marekt stage of drugs.
 
 # Process
 
-The process starts with...
+The process starts with the doctor google form. 
 
 
 
