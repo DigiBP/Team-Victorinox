@@ -47,3 +47,6 @@ In the make scenario the google sheet ePrescription Form (Responses) is watched 
 
 <img src="process one.png" alt="My Image" width="900" height="300">
 
+In camund the form ids are defined and used in the aforementioned json. The gate checks the condition verfy equals true or false (done with a user task).
+
+
