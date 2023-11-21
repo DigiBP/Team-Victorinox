@@ -20,7 +20,7 @@ Our goal is to record PRO and identify unmet medical needs and record adverse dr
 
 The process starts with the doctor google form. 
 
-<img src="makeScenario.png" alt="My Image" width="200" height="200">
+<img src="makeScenario.png" alt="My Image" width="300" height="200">
 
 
 
