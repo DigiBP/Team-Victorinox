@@ -18,7 +18,7 @@ Our goal is to record PRO and identify unmet medical needs and record adverse dr
 
 # Process
 
-The process starts with the doctor google form. 
+The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
 
 <img src="makeScenario.png" alt="My Image" width="300" height="200">
 
