@@ -22,7 +22,7 @@ The process starts with the doctor google form.
 
 <img src="makeScenario.png" alt="My Image" width="300" height="200">
 
-In the make scenario the google sheet ePrescription Form (Responses) is watched for new rows. Furthermore a request via the HTTP POST method is made with a json: 
+In the make scenario the google sheet ePrescription Form (Responses) is watched for new rows. Furthermore a request via the HTTP POST method is made with a json request content: 
 
 {      "variables": 
 {        
