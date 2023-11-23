@@ -106,4 +106,4 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 <<Dear Customer, the medication you orderd has dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
 
-To Do: add a further service task for the email to be send to people with PRO enrollment (with the form).
+To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate.
