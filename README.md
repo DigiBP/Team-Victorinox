@@ -49,3 +49,6 @@ In the make scenario the google sheet ePrescription Form (Responses) is watched 
 In camunda the form ids are defined and used in the aforementioned json and the corresponding value is selected in make. The gate checks the condition verfy equals true or false, this is processed by a user task and is followed by the user taks dispense medication.
 
 <img src="webhookDispenseConfirmation.png" alt="My Image" width="300" height="300">
+
+
+The weebhok is shedueled for imediately as soon as data arives. A medication dispensation email will be sent from teamvictorinoxoutlook.com
