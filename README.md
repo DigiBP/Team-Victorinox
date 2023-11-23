@@ -51,4 +51,6 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 <img src="webhookDispenseConfirmation.png" alt="My Image" width="300" height="300">
 
 
-The weebhok is scheduled for immediately as soon as data arives. A medication dispensation email will be sent from teamvictorinoxoutlook.com
+The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
+<<Dear Customer, the medication you orderd has dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
+>>
