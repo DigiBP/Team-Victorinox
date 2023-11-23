@@ -24,26 +24,25 @@ The process starts with a google form which is filled out by the doctore with in
 
 In the make scenario the google sheet ePrescription Form (Responses) is watched for new rows. Furthermore a request via the HTTP POST method is made with a json request content (): 
 
-{      "variables": 
- {        
-"timestamp" : {          "value" : "",          "type": "String"        },  
-"doctorEmail" : {          "value" : "",          "type": "String"        },   
-"medLicenseNr" : {          "value" : "",          "type": "String"        },   
- "physician" : {          "value" : "",          "type": "String"        },        
-"patientName" : {          "value" : "",          "type": "String"        },  
- "dateOfBirth" : {          "value" : "",          "type": "String"        },
-"healthInsuranceDetails" : {          "value" : "",          "type": "String"        }, 
-"dateOfPrescription" : {          "value" : "",          "type": "String"        }, 
-"medicationPrescribed" : {          "value" : "",          "type": "String"        }, 
-"quantityToDispense" : {          "value" : "",          "type": "String"        }, 
-"directionsForUse" : {          "value" : "",          "type": "String"        }, 
-"diagnosisICD10" : {          "value" : "",          "type": "String"        }, 
-"descriptionOfDiagnosis" : {          "value" : "",          "type": "String"        }, 
-"allergiesAndMedInteractions" : {          "value" : "",          "type": "String"        }, 
-"patientEmail" : {          "value" : "",          "type": "String"        }, 
-"enrollment" : {          "value" : "",          "type": "String"        }
-  }   
- }
+{
+"variables":{
+
+"timestamp":{
+"value":"{{1.`0`}}",
+"type":"String"},
+
+"doctorEmail":{
+"value":"{{1.`1`}}",
+"type":"String"},
+
+"medLicenseNr":{
+"value":"{{1.`3`}}",
+"type":"String"}
+
+...
+
+}
+}
 
 <img src="process one.png" alt="My Image" width="900" height="300">
 
