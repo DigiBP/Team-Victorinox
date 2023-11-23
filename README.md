@@ -51,4 +51,4 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 <img src="webhookDispenseConfirmation.png" alt="My Image" width="300" height="300">
 
 
-The weebhok is shedueled for imediately as soon as data arives. A medication dispensation email will be sent from teamvictorinoxoutlook.com
+The weebhok is scheduled for immediately as soon as data arives. A medication dispensation email will be sent from teamvictorinoxoutlook.com
