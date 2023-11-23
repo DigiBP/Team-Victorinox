@@ -103,7 +103,7 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 
 
 The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
-<<Dear Customer, the medication you orderd has dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
+<<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
 
 To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate. Further make scenario with scheduel immediate.
