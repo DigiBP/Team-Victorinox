@@ -26,11 +26,7 @@ Our objective is to seamlessly integrate Patient Reported Outcomes into our digi
 - Patient Identification: Distinguish patients enrolled in the PRO program and requesting them to fill out the PRO form via email.
 - Data Analysis and Reporting: Utilizing data from both the ePrescription database and the PRO database to generate weekly reports, which are then shared with our partners (pharmaceutical companies).
 
-For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL) instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
-
-### Reference
-
-- McKenna, S. P., Doward, L. C., & Davey, K. M. (1998). The Development and Psychometric Properties of the MSQOL: A Migraine-Specific Quality-of-Life Instrument. *Clin Drug Investig*, 15(5), 413-423. Retrieved from [https://pubmed.ncbi.nlm.nih.gov/18370497/](https://pubmed.ncbi.nlm.nih.gov/18370497/)
+For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL), a validated instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
 
 ## Overview
 
