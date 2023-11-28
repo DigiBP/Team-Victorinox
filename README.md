@@ -14,6 +14,10 @@
 
 Health-Related Quality of Life (HRQL) reports are a specific type of Patient Reported Outcomes (PRO) that provide essential information beyond the efficacy and safety evaluation of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in certain cases, contribute to the approval process and inclusion in the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements may not fully capture. Such evaluations are essential to understanding which outcomes of a drug matter most to patients, particularly in terms of their physical condition associated with the disease. It's important that HRQL instruments are validated for the specific medical condition before being used in any phase of clinical trials. Ultimately, HRQL data can significantly influence drug development by providing a patient-centric perspective on the benefits or disadvantages of a medication.
 
+### Reference
+
+- European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
+
 ## Goal
 
 Our objective is to seamlessly integrate Patient Reported Outcomes into our digital pharmacy, aptly named 'PRO Pharmacy.' This process is outlined broadly in this section and involves 3 key steps:
@@ -23,6 +27,10 @@ Our objective is to seamlessly integrate Patient Reported Outcomes into our digi
 - Data Analysis and Reporting: Utilizing data from both the ePrescription database and the PRO database to generate weekly reports, which are then shared with our partners (pharmaceutical companies).
 
 For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL) instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
+
+### Reference
+
+- McKenna, S. P., Doward, L. C., & Davey, K. M. (1998). The Development and Psychometric Properties of the MSQOL: A Migraine-Specific Quality-of-Life Instrument. *Clin Drug Investig*, 15(5), 413-423. Retrieved from [https://pubmed.ncbi.nlm.nih.gov/18370497/](https://pubmed.ncbi.nlm.nih.gov/18370497/)
 
 ## Overview
 
