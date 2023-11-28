@@ -4,9 +4,9 @@
 
 # Members
 
-Alberto Wicker
-John Arellano
-Dominic
+- Alberto Wicker
+- John Arellano
+- Dominic Richner
 
 # Introduction
 
