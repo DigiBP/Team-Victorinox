@@ -30,7 +30,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ## Overview
 
-<span style="color:red;">ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS AND APPS SCRIPT (JAVAS)</span>
+🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS AND APPS SCRIPT (JAVAS)🔴
 
 ## Process 1 
 
@@ -127,19 +127,19 @@ To Do: add a further service task for the email to be send to people with PRO en
 
 ## Process 2: Analysis and Report Generation
 
-### First Element: Timer Start Event
+### First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
---- *insert image of timer start event here*
+🔴--- *insert image of Timer Start Event here*🔴
 
-### Second Element: Service Task
+### Second Element: Service Task (Generate and send report to senior)
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
---- *insert image of service task here*
+🔴--- *insert image of Service Task here*🔴
 
 ### PRO Pharmacy REST API (Python Flask)
 
---- *insert image of Deepnote logo here*
+🔴--- *insert image of Deepnote logo here*🔴
 
 The REST API developed in Deepnote's Python environment is designed to analyze ePrescription and ePRO data from Google Sheets, focusing on migraine medication prescriptions and patient quality of life metrics. 
 
@@ -156,12 +156,16 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 
 **Notebook Access**: [PRO Pharmacy REST API Notebook in Deepnote](https://deepnote.com/workspace/datalbert-6d30db34-a25b-4c27-beda-e66b05ce5c6a/project/Exercise-Writing-your-own-REST-API-using-Python-Flask-Duplicate-3a9b6dfd-68f9-4978-801c-90337e531605/notebook/PRO%20(Flask)-89ce43eca8674262ba69378311b017b9)
 
-### Third Element: User Task
+### Third Element: User Task (Report validation by senior)
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
---- *insert image of Generated email with attachement here*
+🔴--- *insert image of User Task here*🔴
+🔴--- *insert image of Generated email with attachment here*🔴
 
 ### Fourth Element: Message End Event
+
+🔴--- *insert image of Message End Event here*🔴
+
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
 
 ## Acknowledgments
