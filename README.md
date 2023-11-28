@@ -16,7 +16,7 @@ Create an innovaitve digital pharmacy in the Swiss market.
 
 Our goal is to record PRO and identify unmet medical needs and record adverse drug effects in the post marekt stage of drugs.
 
-# Process
+# Process 1 
 
 The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
 
@@ -107,3 +107,6 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 >>
 
 To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate. Further make scenario with schedule immediate.
+
+
+# Process 2
