@@ -26,6 +26,8 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 # Overview
 
+ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2
+
 # Process 1 
 
 The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
@@ -117,6 +119,8 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 >>
 
 To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate. Further make scenario with schedule immediate.
+
+# Process 2 (Analysis and Report Generation)
 
 
 # Process 2
