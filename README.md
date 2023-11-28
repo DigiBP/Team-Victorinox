@@ -30,7 +30,17 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ## Overview
 
-🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS AND APPS SCRIPT (JAVAS)🔴
+🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
+
+## Apps Scripts
+### ePrescription (Doc, QR, Emails)
+**Triggered upon form submission**. Creates a Google Doc for each ePrescription Form submission, it includes relevant details for the patient's prescription. The document is shared via a URL to generate a QR code. This QR code contains the prescription Document, and  is emailed to the patient, physician, and a PRO Pharmacy. Finally, the QR code is inserted into the ePrescription Form (Responses) Sheet for record-keeping. The final step is a cleanup process where the prescription document is sent to the trash and expires on 30 days.
+- link: https://script.google.com/u/0/home/projects/1VzjttMBquePwKhkX1ZhEvc_Y6TTLFy3YXdQ3eRqG2LVxo7UGkxsF99BK/edit
+
+### ePRO  (colab VIZ script)
+**Triggered by form submissions**, adds longitude and latitude to column 14 and 15 respectively  to the ePRO (Responses) Sheet. For each form submission, it combines street, zip, and city to obtain latitude and longitude, which are then added to the respective columns in the sheet. The script manages  addresses in Switzerland and handles errors when the script does not return a result.
+- link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
+
 
 ## Process 1 
 
