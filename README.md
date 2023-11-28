@@ -149,11 +149,11 @@ The primary objective of this task is to generate a PDF report, which is then di
 
 The REST API developed in Deepnote's Python environment is designed to analyze ePrescription and ePRO data from Google Sheets, focusing on migraine medication prescriptions and patient quality of life metrics. 
 
-**Key Features Include:**
+**Key Features:**
 
 - **Flask Web Application Setup**: A Flask app is established to serve as the interface of the system.
 - **Data Loading from Google Sheets**: The code accesses our databases (ePrescription and ePRO Responses) using Gspread and OAuth2Client with a JSON file (API key credential) generated in Google Cloud Platform.
-- **Data Analysis**: This involves creating visualizations, which are then saved as PNG files. These visualizations include Daily Prescriptions (line plot), Prescriptions per Medication (bar chart), Age Distribution of Patients (histogram), Improvements in Migraines (histogram), and Geographical Distribution (bar chart and a map of Switzerland using longitude and latitude from our Apps Script for the ePRO Responses dataset).
+- **Data Analysis**: This involves creating visualizations, which are then saved as PNG files. These visualizations include Daily Prescriptions (line plot), Prescriptions per Medication (bar chart), Age Distribution of Patients (histogram), Improvements in Migraines (histogram), and Geographical Distribution (bar chart) and a map of Switzerland (using longitude and latitude from the ePRO Responses dataset and .shp/.shx  images downloaded from DIVA-GIS https://diva-gis.org/gdata).
 - **Report Generation using FPDF**: All saved PNG visualizations are compiled into a PDF. The title of the report is customized using datetime, and graphs are displayed over two pages.
 - **Email Functionality with SendGrid (Cloud-Based Email Service)**: An API key is generated using SendGrid, enabling the sending of personalized emails with the attached PDF report for review by a senior at PRO Pharmacy before forwarding to our partners.
 
