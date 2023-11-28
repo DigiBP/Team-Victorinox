@@ -4,7 +4,7 @@
 
 # Team-Victorinox
 
-# Members
+## Members
 
 - Alberto Wicker
 - John Arellano
@@ -14,7 +14,7 @@
 
 Health-Related Quality of Life (HRQL) reports are a specific type of Patient Reported Outcomes (PRO) that provide essential information beyond the efficacy and safety evaluation of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in certain cases, contribute to the approval process and inclusion in the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements may not fully capture. Such evaluations are essential to understanding which outcomes of a drug matter most to patients, particularly in terms of their physical condition associated with the disease. It's important that HRQL instruments are validated for the specific medical condition before being used in any phase of clinical trials. Ultimately, HRQL data can significantly influence drug development by providing a patient-centric perspective on the benefits or disadvantages of a medication.
 
-# Goal
+## Goal
 
 Our objective is to seamlessly integrate Patient Reported Outcomes into our digital pharmacy, aptly named 'PRO Pharmacy.' This process is outlined broadly in this section and involves 3 key steps:
 
@@ -24,7 +24,7 @@ Our objective is to seamlessly integrate Patient Reported Outcomes into our digi
 
 For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL) instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
 
-# Overview
+## Overview
 
 ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2
 
@@ -122,5 +122,6 @@ To Do: add a further service task for the email to be send to people with PRO en
 
 # Process 2 (Analysis and Report Generation)
 
+## BPMN description
 
-# Process 2
+
