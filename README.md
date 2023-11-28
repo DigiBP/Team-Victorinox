@@ -36,7 +36,9 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
 
-<img src="makeScenario.png" alt="make scenario google form">
+<div align="center">
+    <img src="makeScenario.png" alt="make scenario google form" width="50%">
+</div>
 
 In the make scenario the google sheet ePrescription Form (Responses) is watched for new rows. Furthermore a request via the HTTP POST method is made with a json request content (): 
 
@@ -111,11 +113,15 @@ In the make scenario the google sheet ePrescription Form (Responses) is watched 
 }
 }
 
-<img src="process one.png" alt="My Image">
+<div align="center">
+    <img src="process one.png" alt="My Image" width="50%">
+</div>
 
 In camunda the form ids are defined and used in the aforementioned json and the corresponding value is selected in make. The gate checks the condition verfy equals true or false, this is processed by a user task and is followed by the user taks dispense medication.
 
-<img src="webhookDispenseConfirmation.png" alt="make scenario email dispensation information">
+<div align="center">
+    <img src="webhookDispenseConfirmation.png" alt="make scenario email dispensation information" width="50%">
+</div>
 
 
 The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
