@@ -10,7 +10,7 @@
 - John Arellano
 - Dominic Richner
 
-# Introduction
+## Introduction
 
 Health-Related Quality of Life (HRQL) reports are a specific type of Patient Reported Outcomes (PRO) that provide essential information beyond the efficacy and safety evaluation of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in certain cases, contribute to the approval process and inclusion in the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements may not fully capture. Such evaluations are essential to understanding which outcomes of a drug matter most to patients, particularly in terms of their physical condition associated with the disease. It's important that HRQL instruments are validated for the specific medical condition before being used in any phase of clinical trials. Ultimately, HRQL data can significantly influence drug development by providing a patient-centric perspective on the benefits or disadvantages of a medication.
 
@@ -32,7 +32,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2
 
-# Process 1 
+## Process 1 
 
 The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
 
@@ -124,8 +124,8 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 
 To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate. Further make scenario with schedule immediate.
 
-# Process 2 (Analysis and Report Generation)
+## Process 2 (Analysis and Report Generation)
 
-## BPMN description
+### BPMN description
 
 
