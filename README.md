@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="PRO.png" alt="My Image" width="200" height="200">
+    <img src="PRO.png" alt="My Image" width="300" height="300">
 </div>
 
 ## <div align="center"> Master of Science in Medical Informatics: Digitization of Business Processes in Healthcare (Autumn-2023) </div>
