@@ -140,6 +140,16 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 
 An email is sent to people with PRO enrollment conaining a link to the form. The router determines which service task is calling and routes to the corresponding email sending module.
 
+1. deploy camunda model
+2. doctor fills out the patient form
+3. run scanrio 1 (google sheets) -> HTTP POST method API call sends a json object to camunda
+   a)Task list
+   b)satrt process
+   c)chose process
+   d)start
+a)-d) is done automatically
+
+the form then needs to be claimed and the veryfy tick need to be selected by the user manually.
 
 ## Process 2: Analysis and Report Generation
 
