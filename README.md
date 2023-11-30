@@ -43,11 +43,17 @@ Our objective is to seamlessly integrate Patient Reported Outcomes into our digi
 
 For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL), a validated instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
 
-## <div align="center"> Overview </div>
+## <div align="center"> Workflow </div>
 
-#### <div align="center"> Summary of Processes </div>
+<div align="center">
+    <img src="PRO Pharmacy Workflow.png" alt="make scenario google form" width="70%">
+</div>
 
-🔴 ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
+## <div align="center"> Main Elements </div>
+
+#### <div align="center"> Summary of Elements </div>
+
+🔴 ADD A COMPREHENSIVE TEXT DESCRIBING  FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
 
 #### <div align="center"> Apps Scripts </div>
 
