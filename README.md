@@ -45,19 +45,21 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ## <div align="center"> Overview </div>
 
-🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
+#### <div align="center"> Summary of Processes </div>
+
+🔴 ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
 
 #### <div align="center"> Apps Scripts </div>
 
-#### ePrescription (Doc, QR, Emails)
+**ePrescription** (Doc, QR, Emails)
 **Triggered upon form submission**. Creates a Google Doc for each ePrescription Form submission, it includes relevant details for the patient's prescription. The document is shared via a URL to generate a QR code. This QR code contains the prescription Document, and  is emailed to the patient, physician, and a PRO Pharmacy. Finally, the QR code is inserted into the ePrescription Form (Responses) Sheet for record-keeping. The final step is a cleanup process where the prescription document is sent to the trash and expires on 30 days.
 - link: https://script.google.com/u/0/home/projects/1VzjttMBquePwKhkX1ZhEvc_Y6TTLFy3YXdQ3eRqG2LVxo7UGkxsF99BK/edit
 
-#### ePRO  (colab VIZ script)
+**ePRO**  (colab VIZ script)
 **Triggered by form submissions**, adds longitude and latitude to column 14 and 15 respectively  to the ePRO (Responses) Sheet. For each form submission, it combines street, zip, and city to obtain latitude and longitude, which are then added to the respective columns in the sheet. The script manages  addresses in Switzerland and handles errors when the script does not return a result.
 - link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
 
-## <div align="center"> Process 1: Prescription Verification & PRO Enrollment </div>
+## <div align="center"> Process 1 (in-depth): Prescription Verification & PRO Enrollment </div>
 
 The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
 
@@ -165,7 +167,7 @@ a)-d) is done automatically
 
 the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
 
-## <div align="center"> Process 2: Analysis & Report Generation </div>
+## <div align="center"> Process 2 (in-depth): Analysis & Report Generation </div>
 
 ## First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
