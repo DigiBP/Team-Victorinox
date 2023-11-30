@@ -124,7 +124,7 @@ In the make scenario the google sheet ePrescription Form (Responses) is watched 
 }
 
 <div align="center">
-    <img src="process one.png" alt="My Image" width="50%">
+    <img src="processOneFinalVersion.png" alt="My Image" width="50%">
 </div>
 
 In camunda the form ids are defined and used in the aforementioned json and the corresponding value is selected in make. The gate checks the condition verfy equals true or false, this is processed by a user task and is followed by the user taks dispense medication.
