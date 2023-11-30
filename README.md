@@ -156,7 +156,7 @@ Your Victorinox team.
    d)start
 a)-d) is done automatically
 
-the form then needs to be claimed and the veryfy check box need to be selected by the pharmacy employee (both) manually.
+The form then needs to be claimed and the veryfy check box need to be selected by the pharmacy employee (both) manually.
 
 ## Process 2: Analysis and Report Generation
 
