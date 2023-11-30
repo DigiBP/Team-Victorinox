@@ -1,1 +1,93 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1vs6kvh" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.15.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <bpmn:collaboration id="Collaboration_0bpq79p">
+    <bpmn:participant id="Participant_07nav4b" name="Pharmacy (Process 2)" processRef="Process_04v6cvs" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_04v6cvs" isExecutable="true" camunda:historyTimeToLive="180">
+    <bpmn:sequenceFlow id="Flow_1691321" sourceRef="Event_0o1pom8" targetRef="Activity_0bg1too" />
+    <bpmn:sequenceFlow id="Flow_07zvqto" sourceRef="Activity_0bg1too" targetRef="Activity_18pyald" />
+    <bpmn:sequenceFlow id="Flow_1ueosk7" sourceRef="Activity_18pyald" targetRef="Event_04c6zp3" />
+    <bpmn:dataStoreReference id="DataStoreReference_0ht3od3" name="ePrescription and ePRO" />
+    <bpmn:startEvent id="Event_0o1pom8" name="Weekly report">
+      <bpmn:outgoing>Flow_1691321</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1fpebcs">
+        <bpmn:timeCycle xsi:type="bpmn:tFormalExpression">R2/PT10S</bpmn:timeCycle>
+      </bpmn:timerEventDefinition>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Activity_18pyald" name="Report validation by senior">
+      <bpmn:incoming>Flow_07zvqto</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ueosk7</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_0bg1too" name="Generate and send report to senior">
+      <bpmn:extensionElements>
+        <camunda:connector>
+          <camunda:inputOutput>
+            <camunda:inputParameter name="url">https://3a9b6dfd-68f9-4978-801c-90337e531605.deepnoteproject.com/generate_report</camunda:inputParameter>
+            <camunda:inputParameter name="method">GET</camunda:inputParameter>
+          </camunda:inputOutput>
+          <camunda:connectorId>http-connector</camunda:connectorId>
+        </camunda:connector>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1691321</bpmn:incoming>
+      <bpmn:outgoing>Flow_07zvqto</bpmn:outgoing>
+      <bpmn:property id="Property_1mjuht1" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0c2htfu">
+        <bpmn:sourceRef>DataStoreReference_0ht3od3</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1mjuht1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_04c6zp3" name="Send report visualization to partners">
+      <bpmn:incoming>Flow_1ueosk7</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0bpq79p">
+      <bpmndi:BPMNShape id="Participant_07nav4b_di" bpmnElement="Participant_07nav4b" isHorizontal="true">
+        <dc:Bounds x="160" y="78" width="630" height="320" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_0ht3od3_di" bpmnElement="DataStoreReference_0ht3od3">
+        <dc:Bounds x="385" y="305" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="378" y="362" width="65" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_10bbcc1_di" bpmnElement="Event_0o1pom8">
+        <dc:Bounds x="232" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="216" y="245" width="68" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02woerd_di" bpmnElement="Activity_18pyald">
+        <dc:Bounds x="540" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07i8vko_di" bpmnElement="Activity_0bg1too">
+        <dc:Bounds x="360" y="180" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0yv564x_di" bpmnElement="Event_04c6zp3">
+        <dc:Bounds x="712" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="695" y="245" width="73" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1691321_di" bpmnElement="Flow_1691321">
+        <di:waypoint x="268" y="220" />
+        <di:waypoint x="360" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07zvqto_di" bpmnElement="Flow_07zvqto">
+        <di:waypoint x="460" y="220" />
+        <di:waypoint x="540" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ueosk7_di" bpmnElement="Flow_1ueosk7">
+        <di:waypoint x="640" y="220" />
+        <di:waypoint x="712" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_0c2htfu_di" bpmnElement="DataInputAssociation_0c2htfu">
+        <di:waypoint x="410" y="305" />
+        <di:waypoint x="410" y="260" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
