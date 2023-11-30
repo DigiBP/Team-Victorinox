@@ -27,7 +27,7 @@
 
 ## <div align="center"> Introduction </div>
 
-**Health-Related Quality of Life (HRQL)** reports are a specific type of Patient Reported Outcomes **(PRO)** that provide essential information beyond the efficacy and safety evaluation of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in certain cases, contribute to the approval process and inclusion in the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements may not fully capture. Such evaluations are essential to understanding which outcomes of a drug matter most to patients, particularly in terms of their quality of life associated with the disease. It's important that HRQL instruments are validated for the specific medical condition before being used in any phase of clinical trials. Ultimately, HRQL data can significantly influence drug development by providing a patient-centric perspective on the benefits or disadvantages of a medication.
+**Health-Related Quality of Life (HRQL)** reports are a type of Patient Reported Outcomes (PRO) that provide valuable information beyond the efficacy and safety of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in some cases, contribute to the approval process / inclusion of the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements often fail to fully capture. Such evaluations are essential to understand which outcomes of a drug matter most to patients by providing a patient-centric perspective on the advantages and disadvantages of a particular medication. It's important that HRQL instruments are validated for a medical condition before being used in any phase of clinical trials.
 
 ### <div align="center"> Reference
 
@@ -55,7 +55,6 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 ### ePRO  (colab VIZ script)
 **Triggered by form submissions**, adds longitude and latitude to column 14 and 15 respectively  to the ePRO (Responses) Sheet. For each form submission, it combines street, zip, and city to obtain latitude and longitude, which are then added to the respective columns in the sheet. The script manages  addresses in Switzerland and handles errors when the script does not return a result.
 - link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
-
 
 ## <div align="center"> Process 1  </div>
 
@@ -148,7 +147,6 @@ In camunda the form ids are defined and used in the aforementioned json and the 
     <img src="webhookDispenseConfirmationPROform.png" alt="make scenario email dispensation information" width="50%">
 </div>
 
-
 The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
 <<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
@@ -193,7 +191,6 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 - **Email Functionality with SendGrid (Cloud-Based Email Service)**: An API key is generated using SendGrid, enabling the sending of personalized emails with the attached PDF report for review by a senior at PRO Pharmacy before forwarding to our partners.
 
 **The notebook is configured to run as a server using Flask, making the application accessible over the web.**
-
 
 **Notebook Access**: [PRO Pharmacy REST API Notebook in Deepnote](https://deepnote.com/workspace/datalbert-6d30db34-a25b-4c27-beda-e66b05ce5c6a/project/Exercise-Writing-your-own-REST-API-using-Python-Flask-Duplicate-3a9b6dfd-68f9-4978-801c-90337e531605/notebook/PRO%20(Flask)-89ce43eca8674262ba69378311b017b9)
 
