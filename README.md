@@ -2,23 +2,40 @@
     <img src="PRO.png" alt="My Image" width="200" height="200">
 </div>
 
-# Team Victorinox
+## <div align="center"> Master of Science in Medical Informatics: </div>
+## <div align="center"> Digitization of Business Processes in Healthcare (Autumn-2023) </div>
 
-## Members
 
-- Alberto Wicker
-- John Arellano
-- Dominic Richner
+**Team Name**: Victorinox
 
-## Introduction
+**Topic**: Digital Pharmacy
+
+**Product Name**: PRO Pharmacy
+
+**Deliverables**: 
+1) GitHub repositories with modeling and technical artefacts as well as the supporting documentation.
+2) Links to a running workflows and microservice instantiations.
+3) A PowerPoint presentation.
+
+**Presentation Date**: December 7th, 2023 @ 1600
+
+#### Members
+
+| **Names**         | **Emails**                          |
+|-------------------|-------------------------------------|
+| Alberto Wicker    | alberto.wickervera@students.fhnw.ch |
+| John Arellano     | john.arellano@students.fhnw.ch      |
+| Dominic Richner   | dominic.richner@students.fhnw.ch    |
+
+## <div align="center"> Introduction </div>
 
 **Health-Related Quality of Life (HRQL)** reports are a specific type of Patient Reported Outcomes **(PRO)** that provide essential information beyond the efficacy and safety evaluation of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in certain cases, contribute to the approval process and inclusion in the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements may not fully capture. Such evaluations are essential to understanding which outcomes of a drug matter most to patients, particularly in terms of their quality of life associated with the disease. It's important that HRQL instruments are validated for the specific medical condition before being used in any phase of clinical trials. Ultimately, HRQL data can significantly influence drug development by providing a patient-centric perspective on the benefits or disadvantages of a medication.
 
-### Reference
+### <div align="center"> Reference
 
 - European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
 
-## Goal
+## <div align="center"> Goal
 
 Our objective is to seamlessly integrate Patient Reported Outcomes into our digital pharmacy, aptly named 'PRO Pharmacy.' This process is outlined broadly in this section and involves 3 key steps:
 
@@ -28,7 +45,7 @@ Our objective is to seamlessly integrate Patient Reported Outcomes into our digi
 
 For this project, we've chosen to focus on Phase IV (post-marketing) to monitor long-term impacts on quality of life in a real-world setting across a broader patient population. Our focus is on patients diagnosed with migraine (encompased in ICD-10: G43), as HRQL reports are particularly significant in chronic diseases. The PRO form used in our project is based on the "Migraine Specific Quality of Life" (MSQOL), a validated instrument, which has been simplified for this project. The insights gained from these reports will ultimately help pharmaceutical companies tailor drugs to meet previously unidentified patient needs, redefine marketing strategies, distinguish their drugs from competitors, and potentially influence the design of clinical trials.
 
-## Overview
+## <div align="center"> Overview </div>
 
 🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
 
@@ -42,7 +59,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 - link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
 
 
-## Process 1 
+## <div align="center"> Process 1  </div>
 
 The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
 
@@ -134,18 +151,11 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 </div>
 
 
-The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run manually. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
+The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
 <<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
 
-  <img src="makeConnection.png" alt="make connection image">
-
 An email is sent to people with PRO enrollment conaining a link to the form. The router determines which service task is calling and routes to the corresponding email sending module.
-<<Dear Customer, 
-You have enrolled to the PRO form. 
-Please fill out the following form provided via this link: https://docs.google.com/forms/d/e/1FAIpQLSc2L2cH2rir96DBVvtVYWALDP-yHIFVZDvBC6I0d1iZ9hOw4g/viewform?usp=sharing
-Your Victorinox team.
->>
 
 1. deploy camunda model
 2. doctor fills out the patient form
@@ -156,9 +166,9 @@ Your Victorinox team.
    d)start
 a)-d) is done automatically
 
-The form then needs to be claimed and the veryfy check box need to be selected by the pharmacy employee (both) manually.
+the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
 
-## Process 2: Analysis and Report Generation
+## <div align="center"> Process 2: Analysis and Report Generation </div>
 
 ### First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
@@ -201,7 +211,7 @@ This step is designated as a User Task because it requires a review by a senior 
 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
 
-## Acknowledgments
+## <div align="center"> Acknowledgments </div>
 
 Special thanks to Charuta Pande for her invaluable guidance and patience throughout this project. Her expertise was crucial in meticulously shaping and refining our project vision.
 
