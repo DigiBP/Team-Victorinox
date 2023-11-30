@@ -2,7 +2,7 @@
     <img src="PRO.png" alt="My Image" width="200" height="200">
 </div>
 
-# Team-Victorinox
+# Team Victorinox
 
 ## Members
 
