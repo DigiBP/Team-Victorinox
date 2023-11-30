@@ -149,7 +149,7 @@ An email is sent to people with PRO enrollment conaining a link to the form. The
    d)start
 a)-d) is done automatically
 
-the form then needs to be claimed and the veryfy tick need to be selected by the user manually.
+the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
 
 ## Process 2: Analysis and Report Generation
 
