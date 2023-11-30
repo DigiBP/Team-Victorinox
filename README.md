@@ -44,7 +44,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ## Process 1 
 
-The process starts with a google form which is filled out by the doctore with information on the doctor, patient, the perscription and PRO and furthermore a QR Code is generated and sent via email. 
+The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
 
 <div align="center">
     <img src="makeScenario.png" alt="make scenario google form" width="50%">
@@ -138,7 +138,7 @@ The make scenario with the weebhok and send email modules are scheduled for imme
 <<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
 
-To Do: add a further service task for the email to be send to people with PRO enrollment (with the form) after the second gate. Further make scenario with schedule immediate.
+An email is sent to people with PRO enrollment conaining a link to the form. The router determines which service task is calling and routes to the corresponding email sending module.
 
 
 ## Process 2: Analysis and Report Generation
