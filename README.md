@@ -134,11 +134,18 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 </div>
 
 
-The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
+The make scenario with the weebhok and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run manually. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
 <<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
 >>
 
+  <img src="makeConnection.png" alt="make connection image">
+
 An email is sent to people with PRO enrollment conaining a link to the form. The router determines which service task is calling and routes to the corresponding email sending module.
+<<Dear Customer, 
+You have enrolled to the PRO form. 
+Please fill out the following form provided via this link: https://docs.google.com/forms/d/e/1FAIpQLSc2L2cH2rir96DBVvtVYWALDP-yHIFVZDvBC6I0d1iZ9hOw4g/viewform?usp=sharing
+Your Victorinox team.
+>>
 
 1. deploy camunda model
 2. doctor fills out the patient form
@@ -149,7 +156,7 @@ An email is sent to people with PRO enrollment conaining a link to the form. The
    d)start
 a)-d) is done automatically
 
-the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
+the form then needs to be claimed and the veryfy check box need to be selected by the pharmacy employee (both) manually.
 
 ## Process 2: Analysis and Report Generation
 
