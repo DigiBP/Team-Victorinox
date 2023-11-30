@@ -2,9 +2,7 @@
     <img src="PRO.png" alt="My Image" width="200" height="200">
 </div>
 
-## <div align="center"> Master of Science in Medical Informatics: </div>
-## <div align="center"> Digitization of Business Processes in Healthcare (Autumn-2023) </div>
-
+## <div align="center"> Master of Science in Medical Informatics: Digitization of Business Processes in Healthcare (Autumn-2023) </div>
 
 **Team Name**: Victorinox
 
