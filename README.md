@@ -15,9 +15,9 @@
 2) Links to a running workflows and microservice instantiations.
 3) A PowerPoint presentation.
 
-**Presentation Date**: December 7th, 2023 @ 1600
+**Presentation Date**: December 7th, 2023
 
-#### Members
+#### Members:
 
 | **Names**         | **Emails**                          |
 |-------------------|-------------------------------------|
@@ -29,11 +29,11 @@
 
 **Health-Related Quality of Life (HRQL)** reports are a type of Patient Reported Outcomes (PRO) that provide valuable information beyond the efficacy and safety of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in some cases, contribute to the approval process / inclusion of the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements often fail to fully capture. Such evaluations are essential to understand which outcomes of a drug matter most to patients by providing a patient-centric perspective on the advantages and disadvantages of a particular medication. It's important that HRQL instruments are validated for a medical condition before being used in any phase of clinical trials.
 
-### <div align="center"> Reference
+## <div align="center"> References </div>
 
 - European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
 
-## <div align="center"> Goal
+## <div align="center"> Goals </div>
 
 Our objective is to seamlessly integrate Patient Reported Outcomes into our digital pharmacy, aptly named 'PRO Pharmacy.' This process is outlined broadly in this section and involves 3 key steps:
 
@@ -47,16 +47,17 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 🔴 BACKBONE: ADD A COMPREHENSIVE TEXT DESCRIBING PROCCESS 1 AND PROCCESS 2, FORMS, GOOGLE SHEETS AND APPS SCRIPT (JAVAS) (✅)🔴
 
-### Apps Scripts
-### ePrescription (Doc, QR, Emails)
+#### <div align="center"> Apps Scripts </div>
+
+#### ePrescription (Doc, QR, Emails)
 **Triggered upon form submission**. Creates a Google Doc for each ePrescription Form submission, it includes relevant details for the patient's prescription. The document is shared via a URL to generate a QR code. This QR code contains the prescription Document, and  is emailed to the patient, physician, and a PRO Pharmacy. Finally, the QR code is inserted into the ePrescription Form (Responses) Sheet for record-keeping. The final step is a cleanup process where the prescription document is sent to the trash and expires on 30 days.
 - link: https://script.google.com/u/0/home/projects/1VzjttMBquePwKhkX1ZhEvc_Y6TTLFy3YXdQ3eRqG2LVxo7UGkxsF99BK/edit
 
-### ePRO  (colab VIZ script)
+#### ePRO  (colab VIZ script)
 **Triggered by form submissions**, adds longitude and latitude to column 14 and 15 respectively  to the ePRO (Responses) Sheet. For each form submission, it combines street, zip, and city to obtain latitude and longitude, which are then added to the respective columns in the sheet. The script manages  addresses in Switzerland and handles errors when the script does not return a result.
 - link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
 
-## <div align="center"> Process 1  </div>
+## <div align="center"> Process 1: Prescription Verification & PRO Enrollment </div>
 
 The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
 
@@ -164,19 +165,19 @@ a)-d) is done automatically
 
 the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
 
-## <div align="center"> Process 2: Analysis and Report Generation </div>
+## <div align="center"> Process 2: Analysis & Report Generation </div>
 
-### First Element: Timer Start Event (Weekly Report)
+## First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 🔴--- *insert image of Timer Start Event here*🔴
 
-### Second Element: Service Task (Generate and send report to senior)
+## Second Element: Service Task (Generate and send report to senior)
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
 🔴--- *insert image of Service Task here*🔴
 
-### PRO Pharmacy REST API (Python Flask)
+## PRO Pharmacy REST API (Python Flask)
 
 🔴--- *insert image of Deepnote logo here*🔴
 
@@ -194,13 +195,13 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 
 **Notebook Access**: [PRO Pharmacy REST API Notebook in Deepnote](https://deepnote.com/workspace/datalbert-6d30db34-a25b-4c27-beda-e66b05ce5c6a/project/Exercise-Writing-your-own-REST-API-using-Python-Flask-Duplicate-3a9b6dfd-68f9-4978-801c-90337e531605/notebook/PRO%20(Flask)-89ce43eca8674262ba69378311b017b9)
 
-### Third Element: User Task (Report validation by senior)
+## Third Element: User Task (Report validation by senior)
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
 🔴--- *insert image of User Task here*🔴
 🔴--- *insert image of Generated email with attachment here*🔴
 
-### Fourth Element: Message End Event
+## Fourth Element: Message End Event
 
 🔴--- *insert image of Message End Event here*🔴
 
