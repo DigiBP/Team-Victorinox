@@ -176,27 +176,27 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
 ## <div align="center"> Process 2 (in-depth): Analysis & Report Generation </div>
 
 <div align="center">
-    <img src="P2_BPMN.png" alt="make scenario google form" width="60%">
+    <img src="Process 2 (images)/P2_BPMN.png" alt="make scenario google form" width="60%">
 </div>
 
 ## First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 <div align="center">
-    <img src="P2_timer_start_event.png" alt="make scenario google form" width="30%">
+    <img src="Process 2 (images)/P2_timer_start_event.png" alt="make scenario google form" width="30%">
 </div>
 
 ## Second Element: Service Task (Generate and send report to senior)
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
 <div align="center">
-    <img src="P2_generate_report.png" alt="make scenario google form" width="30%">
+    <img src="Process 2 (images)/P2_generate_report.png" alt="make scenario google form" width="30%">
 </div>
 
 ## PRO Pharmacy REST API (Python Flask)
 
 <div align="center">
-    <img src="deepnote.png" alt="make scenario google form" width="30%">
+    <img src="Process 2 (images)/deepnote.png" alt="make scenario google form" width="30%">
 </div>
 
 The REST API developed in Deepnote's Python environment is designed to analyze ePrescription and ePRO data from Google Sheets, focusing on migraine medication prescriptions and patient quality of life metrics. 
@@ -217,17 +217,17 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
 <div align="center">
-    <img src="P2_validate_report.png" alt="make scenario google form" width="30%">
+    <img src="Process 2 (images)/P2_validate_report.png" alt="make scenario google form" width="30%">
 </div>
 
 <div align="center">
-    <img src="P2_mail.png" alt="make scenario google form" width="70%">
+    <img src="Process 2 (images)/P2_mail.png" alt="make scenario google form" width="70%">
 </div>
 
 ## Fourth Element: End Event
 
 <div align="center">
-    <img src="P2_send_report.png" alt="make scenario google form" width="30%">
+    <img src="Process 2 (images)/P2_send_report.png" alt="make scenario google form" width="30%">
 </div>
 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
