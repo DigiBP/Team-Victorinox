@@ -29,10 +29,6 @@
 
 **Health-Related Quality of Life (HRQL)** reports are a type of Patient Reported Outcomes (PRO) that provide valuable information beyond the efficacy and safety of medicinal products. They offer insights into how a drug impacts a patient's daily life and, in some cases, contribute to the approval process / inclusion of the product's labeling. These aspects of health, directly reported by patients, cover areas that symptoms or clinical measurements often fail to fully capture. Such evaluations are essential to understand which outcomes of a drug matter most to patients by providing a patient-centric perspective on the advantages and disadvantages of a particular medication. It's important that HRQL instruments are validated for a medical condition before being used in any phase of clinical trials.
 
-## <div align="center"> References </div>
-
-- European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
-
 ## <div align="center"> Goals </div>
 
 Our objective is to seamlessly integrate Patient Reported Outcomes into our digital pharmacy, aptly named 'PRO Pharmacy.' This process is outlined broadly in this section and involves 3 key steps:
@@ -231,6 +227,10 @@ This step is designated as a User Task because it requires a review by a senior 
 </div>
 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
+
+## <div align="center"> References </div>
+
+European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
 
 ## <div align="center"> Acknowledgments </div>
 
