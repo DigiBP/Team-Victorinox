@@ -178,35 +178,27 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
 ## <div align="center"> Process 2 (in-depth): Analysis & Report Generation </div>
 
 <div align="center">
-
-![Readme Files](3.1_P2-BPMN-diag.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_BPMN.png" alt="P2 BPMN" style="width: 70%;">
 </div>
 
 ## First Element: Timer Start Event (Weekly Report)
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 <div align="center">
-
-![Readme Files](3.2_Timer-Start-Event.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_timer_start_event.png" alt="P2 Timer Start Event" style="width: 70%;">
 </div>
 
 ## Second Element: Service Task (Generate and send report to senior)
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
 <div align="center">
-
-![Readme Files](3.3_P2-Service-Task.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_generate_report.png" alt="P2 Generate Report" style="width: 70%;">
 </div>
 
 ## PRO Pharmacy REST API (Python Flask)
 
 <div align="center">
-
-![Readme Files](3.4_P2-Python-Flask.png)
-    
+    <img src="Processes/Process%202%20(images)/deepnote.png" alt="Deepnote" style="width: 70%;">
 </div>
 
 The REST API developed in Deepnote's Python environment is designed to analyze ePrescription and ePRO data from Google Sheets, focusing on migraine medication prescriptions and patient quality of life metrics. 
@@ -227,15 +219,11 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
 <div align="center">
-
-![Readme Files](3.5_P2-Report-Validation.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_validate_report.png" alt="P2 Validate Report" style="width: 70%;">
 </div>
 
 <div align="center">
-
-![Readme Files](3.6_P2-Report-Validation-Email.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_mail.png" alt="P2 Mail" style="width: 70%;">
 </div>
 
 ## Fourth Element: End Event
@@ -243,9 +231,7 @@ This step is designated as a User Task because it requires a review by a senior 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
 
 <div align="center">
-
-![Readme Files](3.7_P2-Send-Report.png)
-    
+    <img src="Processes/Process%202%20(images)/P2_send_report.png" alt="P2 Send Report" style="width: 70%;">
 </div>
 
 ## <div align="center"> References (APA-7): </div>
