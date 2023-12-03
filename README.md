@@ -42,7 +42,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 ## <div align="center"> Workflow </div>
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png" alt="Readme Files" style="width: 80%;">
+    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png" alt="Readme Files" style="width: 70%;">
 </div>
 
 ## <div align="center"> Main Elements </div>
@@ -178,7 +178,7 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
 ## <div align="center"> Process 2 (in-depth): Analysis & Report Generation </div>
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_BPMN.png" alt="P2 BPMN" style="width: 80%;">
+    <img src="Processes/Process%202%20(images)/P2_BPMN.png" alt="P2 BPMN" style="width: 70%;">
 </div>
 
 ## First Element: Timer Start Event (Weekly Report)
