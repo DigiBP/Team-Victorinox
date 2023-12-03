@@ -42,7 +42,9 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 ## <div align="center"> Workflow </div>
 
 <div align="center">
+    
 ![Readme Files](Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png)
+
 </div>
 
 ## <div align="center"> Main Elements </div>
