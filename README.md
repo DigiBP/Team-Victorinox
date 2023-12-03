@@ -1,6 +1,6 @@
 <div align="center">
 
-![Readme Files](Readme Files/1.1_PRO-Pharmacy-Logo.png)
+![PRO Pharmacy Logo](Readme%20Files/1.1_PRO-Pharmacy-Logo.png)
 
 </div>
 
