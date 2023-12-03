@@ -42,7 +42,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 ## <div align="center"> Workflow </div>
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png" alt="Readme Files" style="width: 70%;">
+    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png" alt="Readme Files" style="width: 80%;">
 </div>
 
 ## <div align="center"> Main Elements </div>
@@ -185,20 +185,20 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_timer_start_event.png" alt="P2 Timer Start Event" style="width: 40%;">
+    <img src="Processes/Process%202%20(images)/P2_timer_start_event.png" alt="P2 Timer Start Event" style="width: 20%;">
 </div>
 
 ## Second Element: Service Task (Generate and send report to senior)
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_generate_report.png" alt="P2 Generate Report" style="width: 40%;">
+    <img src="Processes/Process%202%20(images)/P2_generate_report.png" alt="P2 Generate Report" style="width: 20%;">
 </div>
 
 ## PRO Pharmacy REST API (Python Flask)
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/deepnote.png" alt="Deepnote" style="width: 50%;">
+    <img src="Processes/Process%202%20(images)/deepnote.png" alt="Deepnote" style="width: 40%;">
 </div>
 
 The REST API developed in Deepnote's Python environment is designed to analyze ePrescription and ePRO data from Google Sheets, focusing on migraine medication prescriptions and patient quality of life metrics. 
@@ -219,11 +219,11 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_validate_report.png" alt="P2 Validate Report" style="width: 40%;">
+    <img src="Processes/Process%202%20(images)/P2_validate_report.png" alt="P2 Validate Report" style="width: 20%;">
 </div>
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_mail.png" alt="P2 Mail" style="width: 70%;">
+    <img src="Processes/Process%202%20(images)/P2_mail.png" alt="P2 Mail" style="width: 80%;">
 </div>
 
 ## Fourth Element: End Event
@@ -231,7 +231,7 @@ This step is designated as a User Task because it requires a review by a senior 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/P2_send_report.png" alt="P2 Send Report" style="width: 40%;">
+    <img src="Processes/Process%202%20(images)/P2_send_report.png" alt="P2 Send Report" style="width: 20%;">
 </div>
 
 ## <div align="center"> References (APA-7): </div>
