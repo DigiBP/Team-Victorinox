@@ -213,7 +213,7 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 
 **The notebook is configured to run as a server using Flask, making the application accessible over the web.**
 
-**Notebook Access**: [Flask.ipynb](REST%20API%20(Python%20Flask)/PRO/Flask.ipynb)
+**Notebook Access**: [Flask.ipynb](REST%20API%20(Python%20Flask)/PRO%20(Flask).ipynb)
 
 ## Third Element: User Task (Report validation by senior)
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
