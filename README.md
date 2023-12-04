@@ -47,8 +47,6 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 ## <div align="center"> Main Elements </div>
 
-#### <div align="center"> Summary of Elements </div>
-
 #### <div align="center"> Google Forms </div>
 
 **Prescription and PRO-Enrollment Form**: This Google form is filled by the patient's prescribing physician and is the point at which a patient that has been prescribed a drug in Phase IV clinical trials would be enrolled into the PRO Quality of Life program. In this case, the patient has been prescribed a drug for chronic migraines.  
@@ -191,21 +189,21 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
     <img src="Processes/Process%202%20(images)/P2_BPMN.png" alt="P2 BPMN" style="width: 70%;">
 </div>
 
-## First Element: Timer Start Event (Weekly Report)
+## <div align="center"> ## First Element: Timer Start Event (Weekly Report) </div>
 The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Cycle" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 <div align="center">
     <img src="Processes/Process%202%20(images)/P2_timer_start_event.png" alt="P2 Timer Start Event" style="width: 20%;">
 </div>
 
-## Second Element: Service Task (Generate and send report to senior)
+## <div align="center"> Second Element: Service Task (Generate and send report to senior) </div>
 The primary objective of this task is to generate a PDF report, which is then dispatched to our partners. It involves two connector inputs: the first with an assignment type of "String or Expression" and a value of GET, and the second, also a "String or Expression," containing the tunneling link for our PRO Pharmacy REST API (Python Flask) developed in Deepnote.
 
 <div align="center">
     <img src="Processes/Process%202%20(images)/P2_generate_report.png" alt="P2 Generate Report" style="width: 20%;">
 </div>
 
-## PRO Pharmacy REST API (Python Flask)
+## <div align="center"> PRO Pharmacy REST API (Python Flask) </div>
 
 <div align="center">
     <img src="Processes/Process%202%20(images)/deepnote.png" alt="Deepnote" style="width: 40%;">
@@ -225,7 +223,7 @@ The REST API developed in Deepnote's Python environment is designed to analyze e
 
 **Notebook Access**: [Flask.ipynb](REST%20API%20(Python%20Flask)/PRO%20(Flask).ipynb)
 
-## Third Element: User Task (Report validation by senior)
+## <div align="center"> Third Element: User Task (Report validation by senior) </div>
 This step is designated as a User Task because it requires a review by a senior member at PRO Pharmacy. The email generated in the previous Service Task, with the attached PDF report, is reviewed by a senior member who may add additional remarks before dispatching it to our partners.
 
 <div align="center">
@@ -236,7 +234,7 @@ This step is designated as a User Task because it requires a review by a senior 
     <img src="Processes/Process%202%20(images)/P2_mail.png" alt="P2 Mail" style="width: 80%;">
 </div>
 
-## Fourth Element: End Event
+## <div align="center"> Fourth Element: End Event </div>
 
 The process concludes with the sending of the email to our pharmaceutical partners, marking the end of the second process.
 
