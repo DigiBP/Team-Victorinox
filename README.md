@@ -74,9 +74,7 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
 
 <div align="center">
-
-![Readme Files](2.1_P1-makeScenario.png)
-    
+    <img src="Processes/Process%201%20(images)/P1_Prescription%20Verification.jpg" alt="P1 Prescription Verification" style="width: 70%;">
 </div>
 
 In the make scenario the google sheet ePrescription Form (Responses) is watched for new rows. Furthermore a request via the HTTP POST method is made with a json request content (): 
@@ -153,17 +151,13 @@ In the make scenario the google sheet ePrescription Form (Responses) is watched 
 }
 
 <div align="center">
-
-![Readme Files](2.2_P1-BPMN-diag.png)
-    
+    <img src="Processes/Process%201%20(images)/PRO_pharmacy_V3_P1(2).png" alt="PRO Pharmacy V3 P1" style="width: 70%;">
 </div>
 
 In camunda the form ids are defined and used in the aforementioned json and the corresponding value is selected in make. The gate checks the condition verfy equals true or false, this is processed by a user task and is followed by the user taks dispense medication.
 
 <div align="center">
-
-![Readme Files](2.3_P1-webhook-Dispense-Confirmation.png)
-    
+    <img src="Processes/Process%201%20(images)/P1-webhook-Dispense-Confirmation.jpg" alt="P1 Webhook Dispense Confirmation" style="width: 70%;">
 </div>
 
 The make scenario with the webhook and send email modules are scheduled for immediate (as soon as data arrives) and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the follwoing text:
