@@ -182,7 +182,7 @@ the form then needs to be claimed and the veryfy check box needs to be selected 
 </div>
 
 ## First Element: Timer Start Event (Weekly Report)
-The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Duration" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
+The process begins with a Timer Start Event set in the BPMN diagram (Camunda Platform 7). This timer, configured as a "Cycle" type, initiates the process every 10 seconds for demonstration. Ideally, in real-life applications, this process would start weekly, every Monday morning, to generate the report.
 
 <div align="center">
     <img src="Processes/Process%202%20(images)/P2_timer_start_event.png" alt="P2 Timer Start Event" style="width: 20%;">
