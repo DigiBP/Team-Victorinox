@@ -179,9 +179,13 @@ An email is sent to people with PRO enrollment conaining a link to the form. The
 3. Run Scenario 1: google sheets -> HTTP POST method API call sends a json object to camunda.
 
    a)Task list
+
    b)Start process
+
    c)Choose process
+
    d)Start 
+   
    e)Process is done automatically
 
 the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
