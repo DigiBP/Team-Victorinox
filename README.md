@@ -51,13 +51,21 @@ For this project, we've chosen to focus on Phase IV (post-marketing) to monitor 
 
 **Prescription and PRO-Enrollment Form**: This Google form is filled by the patient's prescribing physician and is the point at which a patient that has been prescribed a drug in Phase IV clinical trials would be enrolled into the PRO Quality of Life program. In this case, the patient has been prescribed a drug for chronic migraines.  
 
+- link: https://docs.google.com/forms/d/e/1FAIpQLSfWLpVzlgVTRrDKF1wfn1xS9ThDHiE4BDS-moLOmF4V7PPMuA/viewform?usp=sharing
+
 **Quality of Life ePRO (Questionaire) Form**: This Google form is filled by the patient on a monthly basis. In this case, it is specifically tailored to a patient who has been prescribed a medication to help treat chronic migraines. In future iterations of the program, we would generate a questionaire that applies to every type of medical condition that could conceivably be treated by a drug in Phase IV clinical trials. This particular iteration of the PRO-form is based on the recommendations found in the European Medical Agency's (EMA) regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products and the Migraine-Specific Quality-of-Life Instrument (MSQOL) - a measure designed to assess the quality of life of migraineurs.
+
+- link: https://docs.google.com/forms/d/e/1FAIpQLSc2L2cH2rir96DBVvtVYWALDP-yHIFVZDvBC6I0d1iZ9hOw4g/viewform?usp=sharing
 
 #### <div align="center"> Google Sheets </div>
 
 **Prescription and PRO-Enrollment Responses**: This Google sheet contains all of the responses from the physicians who filled out the Prescription and PRO-Enrollment Form.
 
+- link: https://docs.google.com/spreadsheets/d/1ypOGj5-N9hIeWRvFA12JYLfqmpYX-8iFOVw-5kGGtyc/edit?usp=sharing
+
 **Quality of Life ePRO (Questionaire) Responses**: This Google sheet contains all of the patient responses to the Quality of Life PRO-Questionaire form for migraines.
+
+- link: https://docs.google.com/spreadsheets/d/1qe99zlcNP3slzNdWAdgirf_a88HzSm3_D2ZbBBWLPSc/edit?usp=sharing
 
 #### <div align="center"> Apps Scripts </div>
 
@@ -238,7 +246,9 @@ The process concludes with the sending of the email to our pharmaceutical partne
 
 ## <div align="center"> References (APA-7): </div>
 
-European Medicines Agency. (2005). Reflection paper on the regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products. Retrieved from [https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf](https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation_en.pdf)
+European Medicines Agency. (2005, July 27). Regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products - Scientific guideline. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline 
+
+McKenna, S. P., Doward, L. C., &amp; Davey, K. M. (1998). The development and psychometric properties of the MSQOL. Clinical Drug Investigation, 15(5), 413–423. https://doi.org/10.2165/00044011-199815050-00006 
 
 ## <div align="center"> Acknowledgments </div>
 
