@@ -174,14 +174,15 @@ The make scenario with the webhook and send email modules are scheduled for imme
 
 An email is sent to people with PRO enrollment conaining a link to the form. The router determines which service task is calling and routes to the corresponding email sending module.
 
-1. deploy camunda model
-2. doctor fills out the patient form
-3. run scanrio 1 (google sheets) -> HTTP POST method API call sends a json object to camunda
+1. Deploy the camunda model.
+2. The physician fills out the patient form.
+3. Run Scenario 1: google sheets -> HTTP POST method API call sends a json object to camunda.
+
    a)Task list
-   b)satrt process
-   c)chose process
-   d)start
-a)-d) is done automatically
+   b)Start process
+   c)Choose process
+   d)Start 
+   e)Process is done automatically
 
 the form then needs to be claimed and the veryfy check box needs to be selected by the pharmacy employee manually.
 
@@ -246,9 +247,9 @@ The process concludes with the sending of the email to our pharmaceutical partne
 
 ## <div align="center"> References (APA-7): </div>
 
-European Medicines Agency. (2005, July 27). Regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products - Scientific guideline. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline 
+European Medicines Agency. (2005, July 27). *Regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products - Scientific guideline*. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline. https://www.ema.europa.eu/en/regulatory-guidance-use-health-related-quality-life-hrql-measures-evaluation-medicinal-products-scientific-guideline 
 
-McKenna, S. P., Doward, L. C., &amp; Davey, K. M. (1998). The development and psychometric properties of the MSQOL. Clinical Drug Investigation, 15(5), 413–423. https://doi.org/10.2165/00044011-199815050-00006 
+McKenna, S. P., Doward, L. C., &amp; Davey, K. M. (1998). The development and psychometric properties of the MSQOL. *Clinical Drug Investigation, 15*(5), 413–423. https://doi.org/10.2165/00044011-199815050-00006 
 
 ## <div align="center"> Acknowledgments </div>
 
