@@ -186,6 +186,7 @@ An email is sent to patient's enrolled into ePRO containing a link to the form. 
 3. Run Scenario 1: google sheets -> HTTP POST method API call sends a json object to camunda.
 
 The following are done automatically in the camunda cockpit:
+   
    a) Task list opened
 
    b) Start process button clicked
