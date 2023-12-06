@@ -41,7 +41,11 @@ Victorinox’s objective was to seamlessly integrate a PRO program (ePRO) into t
 
 For this project, we've chosen to focus on HRQL measures for drugs in Phase IV (post-marketing) clinical trials to monitor long-term impacts on patient quality of life in a real-world setting. The HRQL measure that we designed as an example is exclusively for patients diagnosed with chronic migraines (encompassed in ICD-10: G43) and is based on the "Migraine Specific Quality of Life" (MSQOL). The insights gained from these reports can aid pharmaceutical companies in tailoring their products to meet previously unidentified patient needs, re-defining their market strategies, distinguishing their drugs from competitors, and potentially influencing the design of future clinical trials.
 
-## <div align="center"> Workflow </div>
+## <div align="center"> Final BPMN & Workflow </div>
+
+<div align="center">
+    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20V4(final).png" alt="Readme Files" style="width: 70%;">
+</div>
 
 <div align="center">
     <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20Workflow.png" alt="Readme Files" style="width: 70%;">
