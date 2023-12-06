@@ -10,7 +10,7 @@ https://drive.google.com/file/d/1-Vn2ZEWADp0bbGnjDQMbMLm3P8MBsz_Q/view?usp=drive
 
 https://drive.google.com/file/d/1-6kkQ8Kfv-5Q4g3NV-TvB2mZqUDWpS0e/view?usp=sharing
 
-## Linear graph of the number of daily prescriptions filled by participants in ePRO.
+## Line plot of the number of daily prescriptions filled by participants in ePRO.
 
 https://drive.google.com/file/d/1MMZ52Y2NBddW-Nxb1uzdrhVnX119VtYx/view?usp=sharing
 
@@ -18,10 +18,10 @@ https://drive.google.com/file/d/1MMZ52Y2NBddW-Nxb1uzdrhVnX119VtYx/view?usp=shari
 
 https://drive.google.com/file/d/1-8lB2SyLfElQmIY5y_rhbQLhDSLh5BWz/view?usp=drive_link
 
-## Horizontal bar-plot of the number of prescriptions filled for each type of medication. 
+## Horizontal bar-chart of the number of prescriptions filled for each type of medication. 
 
 https://drive.google.com/file/d/1--53c2zTRkjkIRiBQqAV-yAorLoi4xfa/view?usp=drive_link
 
-## Horizontal bar-plot of the number of particpants in the study from each major Swiss city. 
+## Horizontal bar-chart of the number of particpants in the study from each major Swiss city. 
 
 https://drive.google.com/file/d/1-ROqQ3xBNEEL1G1mzn8DX_KFH6y1a4f_/view?usp=sharing
