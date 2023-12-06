@@ -51,11 +51,11 @@ For this project, we've chosen to focus on HRQL measures for drugs in Phase IV (
 
 #### <div align="center"> Google Forms </div>
 
-**Prescription and PRO-Enrollment Form**: This Google form is filled by the patient's prescribing physician and is the point at which a patient that has been prescribed a drug in Phase IV clinical trials would be enrolled into the PRO Quality of Life program. In this case, the patient has been prescribed a drug for chronic migraines.  
+**Prescription and PRO-Enrollment Form**: This Google form is filled by the patient's prescribing physician and is the point at which a patient that has been prescribed a drug in Phase IV clinical trials would be enrolled into the PRO Quality of Life (ePRO) program. In this prototype of our model, we deal exclusively with patients who have  been prescribed a drug for chronic migraines.  
 
 - link: https://docs.google.com/forms/d/e/1FAIpQLSfWLpVzlgVTRrDKF1wfn1xS9ThDHiE4BDS-moLOmF4V7PPMuA/viewform?usp=sharing
 
-**Quality of Life ePRO (Questionaire) Form**: This Google form is filled by the patient on a monthly basis. In this case, it is specifically tailored to a patient who has been prescribed a medication to help treat chronic migraines. In future iterations of the program, we would generate a questionaire that applies to every type of medical condition that could conceivably be treated by a drug in Phase IV clinical trials. This particular iteration of the PRO-form is based on the recommendations found in the European Medical Agency's (EMA) regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products and the Migraine-Specific Quality-of-Life Instrument (MSQOL) - a measure designed to assess the quality of life of migraineurs.
+**Quality of Life ePRO (Questionaire) Form**: This Google form is filled by the patient on a monthly basis. In future iterations of the program, we would generate a questionaire that applies to every type of medical condition that could conceivably be treated by a drug in Phase IV clinical trials. This particular iteration of the PRO-form is based on the recommendations found in the European Medical Agency's (EMA) regulatory guidance for the use of health-related quality of life (HRQL) measures in the evaluation of medicinal products and the Migraine-Specific Quality-of-Life Instrument (MSQOL) - a measure designed to assess the quality of life of migraineurs.
 
 - link: https://docs.google.com/forms/d/e/1FAIpQLSc2L2cH2rir96DBVvtVYWALDP-yHIFVZDvBC6I0d1iZ9hOw4g/viewform?usp=sharing
 
@@ -72,16 +72,16 @@ For this project, we've chosen to focus on HRQL measures for drugs in Phase IV (
 #### <div align="center"> Apps Scripts </div>
 
 **ePrescription** (Doc, QR, Emails)
-**Triggered by form submissions**: Creates a Google Doc for each ePrescription Form submission, it includes relevant details for the patient's prescription. The document is shared via a URL to generate a QR code. This QR code contains the prescription Document, and  is emailed to the patient, physician, and a PRO Pharmacy. Finally, the QR code is inserted into the ePrescription Form (Responses) Sheet for record-keeping. The final step is a cleanup process where the prescription document is sent to the trash and expires on 30 days.
+**Triggered by form submissions**: Creates a Google Doc for each ePrescription Form submission, it includes relevant details for the patient's prescription. The document is shared via a URL that generates a QR code. This QR code contains the prescription Document, and is emailed to the patient, physician, and a PRO Pharmacy. Finally, the QR code is inserted into the ePrescription Form (Responses) Sheet for record-keeping. The final step is a cleanup process where the prescription document is sent to the trash and expires on 30 days.
 - link: https://script.google.com/u/0/home/projects/1VzjttMBquePwKhkX1ZhEvc_Y6TTLFy3YXdQ3eRqG2LVxo7UGkxsF99BK/edit
 
 **ePRO**  (colab VIZ script)
-**Triggered by form submissions**: Adds longitude and latitude to column 14 and 15 respectively  to the ePRO (Responses) Sheet. For each form submission, it combines street, zip, and city to obtain latitude and longitude, which are then added to the respective columns in the sheet. The script manages  addresses in Switzerland and handles errors when the script does not return a result.
+**Triggered by form submissions**: Adds longitude and latitude to column 14 and 15 of the ePRO (Response) Sheet, respectively. For each form submission, it combines street, zip, and city information to obtain latitude and longitude, which are then added to the columns in the sheet. The script manages addresses in Switzerland and handles errors when the script does not return a result.
 - link: https://script.google.com/u/0/home/projects/1YEapO_Fc2_eZS1A2NrFAhlawmzkorGyFHZmKq-hdlaPc2TExKN3PMHVY/edit
 
 ## <div align="center"> Process 1 (in-depth): Prescription Verification & PRO Enrollment </div>
 
-The process starts with a google form which is filled out by the doctor with information on the doctor, patient, the perscription and PRO enrollment and furthermore a QR Code is generated and sent via email. 
+This process begins with a google form which is filled out by the physician with information on the doctor, patient,  perscription, and PRO enrollment. Furthermore, a QR Code is generated and sent via email to the patient if they are enrolled into ePRO in order to complete the HRQL questionnaire. 
 
 <div align="center">
     <img src="Processes/Process%201%20(images)/P1_Prescription%20Verification.jpg" alt="P1 Prescription Verification" style="width: 70%;">
