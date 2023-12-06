@@ -44,7 +44,7 @@ For this project, we've chosen to focus on HRQL measures for drugs in Phase IV (
 ## <div align="center"> Final BPMN & Workflow </div>
 
 <div align="center">
-    <img src="Processes/Process%202%20(images)/PRO%20Pharmacy%20V4(final).png" alt="Readme Files" style="width: 70%;">
+    <img src="/workspaces/Team-Victorinox/Processes/To-be%20Processes/PRO_pharmacy_V4(final).png" alt="Readme Files" style="width: 50%;">
 </div>
 
 <div align="center">
