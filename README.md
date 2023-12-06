@@ -185,15 +185,16 @@ An email is sent to patient's enrolled into ePRO containing a link to the form. 
 2. The physician fills out the patient form.
 3. Run Scenario 1: google sheets -> HTTP POST method API call sends a json object to camunda.
 
-   a) Task list
+The following are done automatically in the camunda cockpit:
+   a) Task list opened
 
-   b) Start process
+   b) Start process button clicked
 
-   c) Choose process
+   c) process to be started chosen
 
-   d) Start 
+   d) process started
 
-   e) Process is done automatically
+   
 
 The form then needs to be claimed and the verify check box needs to be selected by the pharmacy employee manually.
 
