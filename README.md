@@ -253,7 +253,7 @@ The process concludes with the sending of the email to our pharmaceutical partne
     <img src="Processes/Process%202%20(images)/P2_send_report.png" alt="P2 Send Report" style="width: 20%;">
 </div>
 
-## <div align="center"> Strategic Enhancement Opportunities: </div>
+## <div align="center"> Strategic Enhancement Opportunities </div>
 
 **Develop a Web Service**: Implement a service for viewing prescriptions and reports to enhance credibility and user access.
 
