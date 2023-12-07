@@ -92,6 +92,8 @@ Process one begins with a google form, which is filled out by the physician with
     <img src="Processes/Process%201%20(images)/P1_Prescription%20Verification.jpg" alt="P1 Prescription Verification" style="width: 70%;">
 </div>
 
+**Make Scenario 1**: [blueprint Integration Google Sheets, HTTP request.json](Processes/blueprint%20Integration%20Google%20Sheets%2C%20HTTP%20request.json)
+
 In the make scenario, the Google sheet ePrescription Form (Responses) is watched for the addition of new rows. When they appear, a request via the HTTP POST method is made with a json request content (): 
 
 {
@@ -174,6 +176,8 @@ In camunda the form ids are defined and used in the aforementioned json and the 
 <div align="center">
     <img src="Processes/Process%201%20(images)/P1-webhook-Dispense-Confirmation.jpg" alt="P1 Webhook Dispense Confirmation" style="width: 70%;">
 </div>
+
+**Make Scenario 2**: [blueprint-Webhook.json](Processes/blueprint-Webhook.json)
 
 The make scenario with the webhook and send email modules are scheduled for submission as soon as data arrives and therefore does not need to be run immediately. A medication dispensation email will be sent from teamvictorinoxoutlook.com account with the following text:
 <<Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.
