@@ -1,0 +1,589 @@
+{
+    "name": "Integration Webhooks",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": 224456,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": -223,
+                    "y": 1
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "data": {
+                                "editable": "true"
+                            },
+                            "label": "My gateway-webhook webhook"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "patientEmail",
+                        "type": "text"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "module": "builtin:BasicRouter",
+            "version": 1,
+            "mapper": null,
+            "metadata": {
+                "designer": {
+                    "x": 47,
+                    "y": 12
+                }
+            },
+            "routes": [
+                {
+                    "flow": [
+                        {
+                            "id": 5,
+                            "module": "email:ActionSendEmail",
+                            "version": 7,
+                            "parameters": {
+                                "account": 629443,
+                                "saveAfterSent": false
+                            },
+                            "filter": {
+                                "name": "",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{1.email}}",
+                                            "b": "1",
+                                            "o": "number:equal"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "cc": [],
+                                "to": [
+                                    "{{1.patientEmail}}"
+                                ],
+                                "bcc": [],
+                                "from": "",
+                                "html": "Dear Customer, \nYou have enrolled to the PRO form. \nPlease fill out the following form provided via this link: https://docs.google.com/forms/d/e/1FAIpQLSc2L2cH2rir96DBVvtVYWALDP-yHIFVZDvBC6I0d1iZ9hOw4g/viewform?usp=sharing\n Your Victorinox team.",
+                                "sender": "",
+                                "headers": [],
+                                "replyTo": "",
+                                "subject": "Link to PRO form",
+                                "priority": "normal",
+                                "inReplyTo": "",
+                                "references": [],
+                                "attachments": [],
+                                "contentType": "html"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 376,
+                                    "y": -169
+                                },
+                                "restore": {
+                                    "expect": {
+                                        "cc": {
+                                            "mode": "chose"
+                                        },
+                                        "to": {
+                                            "mode": "chose",
+                                            "items": [
+                                                null
+                                            ]
+                                        },
+                                        "bcc": {
+                                            "mode": "chose"
+                                        },
+                                        "priority": {
+                                            "label": "Normal"
+                                        },
+                                        "references": {
+                                            "mode": "chose"
+                                        },
+                                        "attachments": {
+                                            "mode": "chose"
+                                        },
+                                        "contentType": {
+                                            "label": "HTML"
+                                        }
+                                    },
+                                    "parameters": {
+                                        "account": {
+                                            "data": {
+                                                "scoped": "true",
+                                                "connection": "smtp"
+                                            },
+                                            "label": "My Others (SMTP) connection (SMTP TeamVictorinox@outlook.com)"
+                                        },
+                                        "saveAfterSent": {
+                                            "label": "No"
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "account",
+                                        "type": "account:smtp,google-restricted,microsoft-smtp-imap",
+                                        "label": "Connection",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "saveAfterSent",
+                                        "type": "select",
+                                        "label": "Save message after sending",
+                                        "required": true,
+                                        "validate": {
+                                            "enum": [
+                                                true,
+                                                false
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "to",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address",
+                                            "required": true
+                                        },
+                                        "type": "array",
+                                        "label": "To",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "subject",
+                                        "type": "text",
+                                        "label": "Subject"
+                                    },
+                                    {
+                                        "name": "contentType",
+                                        "type": "select",
+                                        "label": "Content Type",
+                                        "required": true,
+                                        "validate": {
+                                            "enum": [
+                                                "html",
+                                                "text"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "attachments",
+                                        "spec": [
+                                            {
+                                                "name": "fileName",
+                                                "type": "filename",
+                                                "label": "File name",
+                                                "required": true,
+                                                "semantic": "file:name"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": "buffer",
+                                                "label": "Data",
+                                                "required": true,
+                                                "semantic": "file:data"
+                                            },
+                                            {
+                                                "name": "cid",
+                                                "type": "text",
+                                                "label": "Content-ID"
+                                            }
+                                        ],
+                                        "type": "array",
+                                        "label": "Attachments"
+                                    },
+                                    {
+                                        "name": "cc",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address"
+                                        },
+                                        "type": "array",
+                                        "label": "Copy recipient"
+                                    },
+                                    {
+                                        "name": "bcc",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address"
+                                        },
+                                        "type": "array",
+                                        "label": "Blind copy recipient"
+                                    },
+                                    {
+                                        "name": "from",
+                                        "type": "text",
+                                        "label": "From"
+                                    },
+                                    {
+                                        "name": "sender",
+                                        "type": "text",
+                                        "label": "Sender"
+                                    },
+                                    {
+                                        "name": "replyTo",
+                                        "type": "text",
+                                        "label": "Reply-To"
+                                    },
+                                    {
+                                        "name": "inReplyTo",
+                                        "type": "text",
+                                        "label": "In-Reply-To"
+                                    },
+                                    {
+                                        "name": "references",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Reference",
+                                            "required": true
+                                        },
+                                        "type": "array",
+                                        "label": "References"
+                                    },
+                                    {
+                                        "name": "priority",
+                                        "type": "select",
+                                        "label": "Priority",
+                                        "validate": {
+                                            "enum": [
+                                                "high",
+                                                "normal",
+                                                "low"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "headers",
+                                        "spec": [
+                                            {
+                                                "name": "key",
+                                                "type": "text",
+                                                "label": "Key",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value",
+                                                "required": true
+                                            }
+                                        ],
+                                        "type": "array",
+                                        "label": "Headers"
+                                    },
+                                    {
+                                        "name": "html",
+                                        "type": "text",
+                                        "label": "Content"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "flow": [
+                        {
+                            "id": 3,
+                            "module": "email:ActionSendEmail",
+                            "version": 7,
+                            "parameters": {
+                                "account": 629443,
+                                "saveAfterSent": false
+                            },
+                            "filter": {
+                                "name": "",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{1.email}}",
+                                            "b": "0",
+                                            "o": "number:equal"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "cc": [],
+                                "to": [
+                                    "{{1.patientEmail}}"
+                                ],
+                                "bcc": [],
+                                "from": "",
+                                "html": "Dear Customer, the medication you orderd has been dispensed. Thank you for choosing our pharmacy. Your Victorinox team.",
+                                "sender": "",
+                                "headers": [],
+                                "replyTo": "",
+                                "subject": "medication dispensation confirmation",
+                                "priority": "normal",
+                                "inReplyTo": "",
+                                "references": [],
+                                "attachments": [],
+                                "contentType": "html"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 385,
+                                    "y": 80
+                                },
+                                "restore": {
+                                    "expect": {
+                                        "cc": {
+                                            "mode": "chose"
+                                        },
+                                        "to": {
+                                            "mode": "chose",
+                                            "items": [
+                                                null
+                                            ]
+                                        },
+                                        "bcc": {
+                                            "mode": "chose"
+                                        },
+                                        "priority": {
+                                            "label": "Normal"
+                                        },
+                                        "references": {
+                                            "mode": "chose"
+                                        },
+                                        "attachments": {
+                                            "mode": "chose"
+                                        },
+                                        "contentType": {
+                                            "label": "HTML"
+                                        }
+                                    },
+                                    "parameters": {
+                                        "account": {
+                                            "data": {
+                                                "scoped": "true",
+                                                "connection": "smtp"
+                                            },
+                                            "label": "My Others (SMTP) connection (SMTP TeamVictorinox@outlook.com)"
+                                        },
+                                        "saveAfterSent": {
+                                            "label": "No"
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "account",
+                                        "type": "account:smtp,google-restricted,microsoft-smtp-imap",
+                                        "label": "Connection",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "saveAfterSent",
+                                        "type": "select",
+                                        "label": "Save message after sending",
+                                        "required": true,
+                                        "validate": {
+                                            "enum": [
+                                                true,
+                                                false
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "to",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address",
+                                            "required": true
+                                        },
+                                        "type": "array",
+                                        "label": "To",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "subject",
+                                        "type": "text",
+                                        "label": "Subject"
+                                    },
+                                    {
+                                        "name": "contentType",
+                                        "type": "select",
+                                        "label": "Content Type",
+                                        "required": true,
+                                        "validate": {
+                                            "enum": [
+                                                "html",
+                                                "text"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "attachments",
+                                        "spec": [
+                                            {
+                                                "name": "fileName",
+                                                "type": "filename",
+                                                "label": "File name",
+                                                "required": true,
+                                                "semantic": "file:name"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": "buffer",
+                                                "label": "Data",
+                                                "required": true,
+                                                "semantic": "file:data"
+                                            },
+                                            {
+                                                "name": "cid",
+                                                "type": "text",
+                                                "label": "Content-ID"
+                                            }
+                                        ],
+                                        "type": "array",
+                                        "label": "Attachments"
+                                    },
+                                    {
+                                        "name": "cc",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address"
+                                        },
+                                        "type": "array",
+                                        "label": "Copy recipient"
+                                    },
+                                    {
+                                        "name": "bcc",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "email",
+                                            "label": "Email address"
+                                        },
+                                        "type": "array",
+                                        "label": "Blind copy recipient"
+                                    },
+                                    {
+                                        "name": "from",
+                                        "type": "text",
+                                        "label": "From"
+                                    },
+                                    {
+                                        "name": "sender",
+                                        "type": "text",
+                                        "label": "Sender"
+                                    },
+                                    {
+                                        "name": "replyTo",
+                                        "type": "text",
+                                        "label": "Reply-To"
+                                    },
+                                    {
+                                        "name": "inReplyTo",
+                                        "type": "text",
+                                        "label": "In-Reply-To"
+                                    },
+                                    {
+                                        "name": "references",
+                                        "spec": {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Reference",
+                                            "required": true
+                                        },
+                                        "type": "array",
+                                        "label": "References"
+                                    },
+                                    {
+                                        "name": "priority",
+                                        "type": "select",
+                                        "label": "Priority",
+                                        "validate": {
+                                            "enum": [
+                                                "high",
+                                                "normal",
+                                                "low"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "headers",
+                                        "spec": [
+                                            {
+                                                "name": "key",
+                                                "type": "text",
+                                                "label": "Key",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value",
+                                                "required": true
+                                            }
+                                        ],
+                                        "type": "array",
+                                        "label": "Headers"
+                                    },
+                                    {
+                                        "name": "html",
+                                        "type": "text",
+                                        "label": "Content"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com"
+    }
+}
